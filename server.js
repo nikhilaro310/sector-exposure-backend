@@ -45,7 +45,6 @@ return res.json({
   updatedPct,
   remainingCapacity,
   limitPct,
-  totalExposure: totalCurrExposure
   });
 });
 
