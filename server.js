@@ -19,9 +19,10 @@ app.post('/calculate', (req, res) => {
 
   const sheetData = currency === 'GBP' ? gbpData : usdData;
 
+  // Improved matching with trimming and lowercasing
   const row = sheetData.find(r => {
     const val = r['Unnamed: 1'];
-    return typeof val === 'string' && val.trim().toLowerCase() === sector.trim().toLowerCase();
+    return val && val.toString().trim().toLowerCase() === sector.trim().toLowerCase();
   });
 
   if (!row) {
