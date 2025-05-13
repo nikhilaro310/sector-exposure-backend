@@ -1,6 +1,6 @@
 
 {
- "homepage": "https://sectorexposure.netlify.app/"
+ "homepage": "https://sectorexposure.netlify.app/",
   "name": "exposure-api",
   "version": "1.0.0",
   "main": "server.js",
