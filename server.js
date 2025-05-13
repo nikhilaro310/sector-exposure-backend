@@ -37,14 +37,15 @@ app.post('/calculate', (req, res) => {
   const updatedPct = totalIfApproved / totalCurrExposure;
   const remainingCapacity = withinLimit - totalIfApproved;
 
-  return res.json({
-    currentExposure,
-    newExposure,
-    totalIfApproved,
-    withinLimit,
-    updatedPct,
-    remainingCapacity,
-    limitPct
+return res.json({
+  currentExposure,
+  newExposure,
+  totalIfApproved,
+  withinLimit,
+  updatedPct,
+  remainingCapacity,
+  limitPct,
+  totalExposure: totalCurrExposure
   });
 });
 
